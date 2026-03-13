@@ -1,0 +1,33 @@
+.footer-container1 {
+  display: contents;
+}
+ 
+.footer-container2 {
+  display: none;
+}
+ 
+.footer-container3 {
+  display: contents;
+}
+ 
+.footer-thq-navlinks-elm {
+  gap: 16px;
+  display: flex;
+  align-items: center;
+}
+ 
+.footer-fragment1 {
+  display: contents;
+}
+ 
+.footer-text3 {
+  display: inline-block;
+}
+ 
+.footer-fragment2 {
+  display: contents;
+}
+ 
+.footer-text4 {
+  display: inline-block;
+}

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>Delectable Circular Zebra</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;  -webkit-font-smoothing: antialiased;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;  color: inherit;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}pre {  white-space: normal;}input {  padding: 2px 4px;}img {  display: block;}details {  display: block;  margin: 0;  padding: 0;}summary::-webkit-details-marker {  display: none;}[data-thq="accordion"] [data-thq="accordion-content"] {  max-height: 0;  overflow: hidden;  transition: max-height 0.3s ease-in-out;  padding: 0;}[data-thq="accordion"] details[data-thq="accordion-trigger"][open] + [data-thq="accordion-content"] {  max-height: 1000vh;}details[data-thq="accordion-trigger"][open] summary [data-thq="accordion-icon"] {  transform: rotate(180deg);}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Roboto;
+        font-size: 1rem;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: undefined;
+        text-transform: undefined;
+        letter-spacing: 0.03em;
+        line-height: 1.6;
+        color: var(--color-on-surface);
+        background: var(--color-surface);
+
+        fill: var(--color-on-surface);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="../style.css" />
+    <div>
+      <link href="./navigation.css" rel="stylesheet" />
+      <div class="navigation-container1">
+        <nav class="navigation-wrapper">
+          <div class="navigation-container">
+            <a href="index.html">
+              <div aria-label="川原田治療院 ホーム" class="navigation-brand">
+                <span class="section-title">川原田治療院</span>
+              </div>
+            </a>
+            <div class="navigation-desktop-menu">
+              <ul class="navigation-thq-navigation-links-elm navigation-links">
+                <li class="navigation-item">
+                  <a href="index.html">
+                    <div class="navigation-link"><span>ホーム</span></div>
+                  </a>
+                </li>
+                <li class="navigation-item">
+                  <a href="Home#rooms">
+                    <div class="navigation-link"><span>院内紹介</span></div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <button
+              id="navigationToggle"
+              type="button"
+              aria-label="メニューを開く"
+              aria-controls="navigationOverlay"
+              aria-expanded="false"
+              class="navigation-mobile-toggle"
+            >
+              <svg
+                fill="none"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+                height="24"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="icon-menu"
+              >
+                <path d="M4 12h16M4 6h16M4 18h16"></path>
+              </svg>
+            </button>
+          </div>
+        </nav>
+        <div
+          id="navigationOverlay"
+          aria-hidden="true"
+          class="navigation-mobile-overlay"
+        >
+          <div class="navigation-overlay-header">
+            <a href="index.html">
+              <div aria-label="川原田治療院 ホーム" class="navigation-brand">
+                <span class="section-title">川原田治療院</span>
+              </div>
+            </a>
+            <button
+              id="navigationClose"
+              type="button"
+              aria-label="メニューを閉じる"
+              class="navigation-mobile-close"
+            >
+              <svg
+                fill="none"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+                height="24"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="icon-close"
+              >
+                <path d="M18 6L6 18M6 6l12 12"></path>
+              </svg>
+            </button>
+          </div>
+          <div class="navigation-overlay-content">
+            <ul class="navigation-mobile-links">
+              <li class="navigation-mobile-item">
+                <a href="index.html">
+                  <div class="navigation-mobile-link"><span>ホーム</span></div>
+                </a>
+              </li>
+              <li class="navigation-mobile-item">
+                <a href="Home#services">
+                  <div class="navigation-mobile-link">
+                    <span>施術内容</span>
+                  </div>
+                </a>
+              </li>
+              <li class="navigation-mobile-item">
+                <a href="Home#about">
+                  <div class="navigation-mobile-link">
+                    <span>当院について</span>
+                  </div>
+                </a>
+              </li>
+              <li class="navigation-mobile-item">
+                <a href="Home#rooms">
+                  <div class="navigation-mobile-link">
+                    <span>院内紹介</span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <div class="navigation-mobile-footer">
+              <p class="section-content">お気軽にお問い合わせください</p>
+              <a href="tel:000-0000-0000">
+                <div class="btn-lg btn-primary navigation-mobile-cta btn">
+                  <svg
+                    fill="none"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                    ></path>
+                  </svg>
+                  <span>000-0000-0000</span>
+                </div>
+              </a>
+              <p class="navigation-location">千葉県船橋市</p>
+            </div>
+          </div>
+        </div>
+        <div
+          id="navigationOverlay"
+          aria-hidden="true"
+          class="navigation-mobile-overlay"
+        >
+          <div class="navigation-overlay-header">
+            <a href="interior-photos.html">
+              <div aria-label="川原田治療院 ホーム" class="navigation-brand">
+                <span class="section-title">川原田治療院</span>
+              </div>
+            </a>
+            <a href="privacy-policy.html">
+              <div aria-label="川原田治療院 ホーム" class="navigation-brand">
+                <span class="section-title">privacy policy</span>
+              </div>
+            </a>
+            <button
+              id="navigationClose"
+              type="button"
+              aria-label="メニューを閉じる"
+              class="navigation-mobile-close"
+            >
+              <svg
+                fill="none"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+                height="24"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="icon-close"
+              >
+                <path d="M18 6L6 18M6 6l12 12"></path>
+              </svg>
+            </button>
+          </div>
+          <div class="navigation-overlay-content">
+            <ul class="navigation-mobile-links">
+              <li class="navigation-mobile-item">
+                <a href="interior-photos.html">
+                  <div class="navigation-mobile-link">
+                    <span>Interior photos</span>
+                  </div>
+                </a>
+              </li>
+              <li class="navigation-mobile-item">
+                <a href="Home#services">
+                  <div class="navigation-mobile-link">
+                    <span>施術内容</span>
+                  </div>
+                </a>
+              </li>
+              <li class="navigation-mobile-item">
+                <a href="Home#about">
+                  <div class="navigation-mobile-link">
+                    <span>当院について</span>
+                  </div>
+                </a>
+              </li>
+              <li class="navigation-mobile-item">
+                <a href="Home#rooms">
+                  <div class="navigation-mobile-link">
+                    <span>院内紹介</span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <div class="navigation-mobile-footer">
+              <p class="section-content">お気軽にお問い合わせください</p>
+              <a href="tel:000-0000-0000">
+                <div class="btn-lg btn-primary navigation-mobile-cta btn">
+                  <svg
+                    fill="none"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                    ></path>
+                  </svg>
+                  <span>000-0000-0000</span>
+                </div>
+              </a>
+              <p class="navigation-location">千葉県船橋市</p>
+            </div>
+          </div>
+        </div>
+        <div class="navigation-container2">
+          <div class="navigation-container3">
+            <style>
+              @media (prefers-reduced-motion: reduce) {
+              .navigation-mobile-overlay, .navigation-link::after, .navigation-wrapper {
+                transition: none;
+              }
+              }
+            </style>
+          </div>
+        </div>
+        <div class="navigation-container4">
+          <div class="navigation-container5">
+            <script defer="" data-name="navigation-logic">
+              document.addEventListener('DOMContentLoaded', function() {
+                (function(){
+                  const navToggle = document.getElementById("navigationToggle")
+                  const navClose = document.getElementById("navigationClose")
+                  const navOverlay = document.getElementById("navigationOverlay")
+                  const navLinks = document.querySelectorAll(".navigation-mobile-link")
+
+                  function openMenu() {
+                    navOverlay.style.display = "flex"
+                    // Small delay to trigger transition
+                    setTimeout(() => {
+                      navOverlay.classList.add("is-active")
+                      navToggle.setAttribute("aria-expanded", "true")
+                      navOverlay.setAttribute("aria-hidden", "false")
+                      document.body.style.overflow = "hidden"
+                    }, 10)
+                  }
+
+                  function closeMenu() {
+                    navOverlay.classList.remove("is-active")
+                    navToggle.setAttribute("aria-expanded", "false")
+                    navOverlay.setAttribute("aria-hidden", "true")
+                    document.body.style.overflow = ""
+
+                    // Wait for transition to end before hiding
+                    setTimeout(() => {
+                      if (!navOverlay.classList.contains("is-active")) {
+                        navOverlay.style.display = "none"
+                      }
+                    }, 300)
+                  }
+
+                  if (navToggle) {
+                    navToggle.addEventListener("click", openMenu)
+                  }
+
+                  if (navClose) {
+                    navClose.addEventListener("click", closeMenu)
+                  }
+
+                  // Close menu when clicking links
+                  navLinks.forEach((link) => {
+                    link.addEventListener("click", closeMenu)
+                  })
+
+                  // Close menu on ESC key
+                  document.addEventListener("keydown", (e) => {
+                    if (e.key === "Escape" && navOverlay.classList.contains("is-active")) {
+                      closeMenu()
+                    }
+                  })
+
+                  // Close menu if window is resized above mobile breakpoint
+                  window.addEventListener("resize", () => {
+                    if (window.innerWidth > 767 && navOverlay.classList.contains("is-active")) {
+                      closeMenu()
+                    }
+                  })
+                })()
+              });
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

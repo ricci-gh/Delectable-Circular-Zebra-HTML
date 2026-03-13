@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>Delectable Circular Zebra</title>
+    <meta property="og:title" content="Delectable Circular Zebra" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;  -webkit-font-smoothing: antialiased;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;  color: inherit;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}pre {  white-space: normal;}input {  padding: 2px 4px;}img {  display: block;}details {  display: block;  margin: 0;  padding: 0;}summary::-webkit-details-marker {  display: none;}[data-thq="accordion"] [data-thq="accordion-content"] {  max-height: 0;  overflow: hidden;  transition: max-height 0.3s ease-in-out;  padding: 0;}[data-thq="accordion"] details[data-thq="accordion-trigger"][open] + [data-thq="accordion-content"] {  max-height: 1000vh;}details[data-thq="accordion-trigger"][open] summary [data-thq="accordion-icon"] {  transform: rotate(180deg);}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Roboto;
+        font-size: 1rem;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: undefined;
+        text-transform: undefined;
+        letter-spacing: 0.03em;
+        line-height: 1.6;
+        color: var(--color-on-surface);
+        background: var(--color-surface);
+
+        fill: var(--color-on-surface);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+
+      <div class="home-container1">
+        <navigation-wrapper class="navigation-wrapper">
+          <!--Navigation component-->
+          <div class="navigation-container1">
+            <nav class="navigation-wrapper">
+              <div class="navigation-container">
+                <a href="index.html">
+                  <div
+                    aria-label="川原田治療院 ホーム"
+                    class="navigation-brand"
+                  >
+                    <span class="section-title">川原田治療院</span>
+                  </div>
+                </a>
+                <div class="navigation-desktop-menu">
+                  <ul
+                    class="navigation-thq-navigation-links-elm navigation-links"
+                  >
+                    <li class="navigation-item">
+                      <a href="index.html">
+                        <div class="navigation-link"><span>ホーム</span></div>
+                      </a>
+                    </li>
+                    <li class="navigation-item">
+                      <a href="Home#rooms">
+                        <div class="navigation-link"><span>院内紹介</span></div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <button
+                  id="navigationToggle"
+                  type="button"
+                  aria-label="メニューを開く"
+                  aria-controls="navigationOverlay"
+                  aria-expanded="false"
+                  class="navigation-mobile-toggle"
+                >
+                  <svg
+                    fill="none"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon-menu"
+                  >
+                    <path d="M4 12h16M4 6h16M4 18h16"></path>
+                  </svg>
+                </button>
+              </div>
+            </nav>
+            <div
+              id="navigationOverlay"
+              aria-hidden="true"
+              class="navigation-mobile-overlay"
+            >
+              <div class="navigation-overlay-header">
+                <a href="index.html">
+                  <div
+                    aria-label="川原田治療院 ホーム"
+                    class="navigation-brand"
+                  >
+                    <span class="section-title">川原田治療院</span>
+                  </div>
+                </a>
+                <button
+                  id="navigationClose"
+                  type="button"
+                  aria-label="メニューを閉じる"
+                  class="navigation-mobile-close"
+                >
+                  <svg
+                    fill="none"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon-close"
+                  >
+                    <path d="M18 6L6 18M6 6l12 12"></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="navigation-overlay-content">
+                <ul class="navigation-mobile-links">
+                  <li class="navigation-mobile-item">
+                    <a href="index.html">
+                      <div class="navigation-mobile-link">
+                        <span>ホーム</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="navigation-mobile-item">
+                    <a href="Home#services">
+                      <div class="navigation-mobile-link">
+                        <span>施術内容</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="navigation-mobile-item">
+                    <a href="Home#about">
+                      <div class="navigation-mobile-link">
+                        <span>当院について</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="navigation-mobile-item">
+                    <a href="Home#rooms">
+                      <div class="navigation-mobile-link">
+                        <span>院内紹介</span>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+                <div class="navigation-mobile-footer">
+                  <p class="section-content">お気軽にお問い合わせください</p>
+                  <a href="tel:000-0000-0000">
+                    <div class="btn-lg btn-primary navigation-mobile-cta btn">
+                      <svg
+                        fill="none"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="24"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                        ></path>
+                      </svg>
+                      <span>000-0000-0000</span>
+                    </div>
+                  </a>
+                  <p class="navigation-location">千葉県船橋市</p>
+                </div>
+              </div>
+            </div>
+            <div
+              id="navigationOverlay"
+              aria-hidden="true"
+              class="navigation-mobile-overlay"
+            >
+              <div class="navigation-overlay-header">
+                <a href="interior-photos.html">
+                  <div
+                    aria-label="川原田治療院 ホーム"
+                    class="navigation-brand"
+                  >
+                    <span class="section-title">川原田治療院</span>
+                  </div>
+                </a>
+                <a href="privacy-policy.html">
+                  <div
+                    aria-label="川原田治療院 ホーム"
+                    class="navigation-brand"
+                  >
+                    <span class="section-title">privacy policy</span>
+                  </div>
+                </a>
+                <button
+                  id="navigationClose"
+                  type="button"
+                  aria-label="メニューを閉じる"
+                  class="navigation-mobile-close"
+                >
+                  <svg
+                    fill="none"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon-close"
+                  >
+                    <path d="M18 6L6 18M6 6l12 12"></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="navigation-overlay-content">
+                <ul class="navigation-mobile-links">
+                  <li class="navigation-mobile-item">
+                    <a href="interior-photos.html">
+                      <div class="navigation-mobile-link">
+                        <span>Interior photos</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="navigation-mobile-item">
+                    <a href="Home#services">
+                      <div class="navigation-mobile-link">
+                        <span>施術内容</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="navigation-mobile-item">
+                    <a href="Home#about">
+                      <div class="navigation-mobile-link">
+                        <span>当院について</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="navigation-mobile-item">
+                    <a href="Home#rooms">
+                      <div class="navigation-mobile-link">
+                        <span>院内紹介</span>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+                <div class="navigation-mobile-footer">
+                  <p class="section-content">お気軽にお問い合わせください</p>
+                  <a href="tel:000-0000-0000">
+                    <div class="btn-lg btn-primary navigation-mobile-cta btn">
+                      <svg
+                        fill="none"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="24"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                        ></path>
+                      </svg>
+                      <span>000-0000-0000</span>
+                    </div>
+                  </a>
+                  <p class="navigation-location">千葉県船橋市</p>
+                </div>
+              </div>
+            </div>
+            <div class="navigation-container2">
+              <div class="navigation-container3">
+                <style>
+                  @media (prefers-reduced-motion: reduce) {
+                  .navigation-mobile-overlay, .navigation-link::after, .navigation-wrapper {
+                    transition: none;
+                  }
+                  }
+                </style>
+              </div>
+            </div>
+            <div class="navigation-container4">
+              <div class="navigation-container5">
+                <script defer="" data-name="navigation-logic">
+                  document.addEventListener('DOMContentLoaded', function() {
+                    (function(){
+                      const navToggle = document.getElementById("navigationToggle")
+                      const navClose = document.getElementById("navigationClose")
+                      const navOverlay = document.getElementById("navigationOverlay")
+                      const navLinks = document.querySelectorAll(".navigation-mobile-link")
+
+                      function openMenu() {
+                        navOverlay.style.display = "flex"
+                        // Small delay to trigger transition
+                        setTimeout(() => {
+                          navOverlay.classList.add("is-active")
+                          navToggle.setAttribute("aria-expanded", "true")
+                          navOverlay.setAttribute("aria-hidden", "false")
+                          document.body.style.overflow = "hidden"
+                        }, 10)
+                      }
+
+                      function closeMenu() {
+                        navOverlay.classList.remove("is-active")
+                        navToggle.setAttribute("aria-expanded", "false")
+                        navOverlay.setAttribute("aria-hidden", "true")
+                        document.body.style.overflow = ""
+
+                        // Wait for transition to end before hiding
+                        setTimeout(() => {
+                          if (!navOverlay.classList.contains("is-active")) {
+                            navOverlay.style.display = "none"
+                          }
+                        }, 300)
+                      }
+
+                      if (navToggle) {
+                        navToggle.addEventListener("click", openMenu)
+                      }
+
+                      if (navClose) {
+                        navClose.addEventListener("click", closeMenu)
+                      }
+
+                      // Close menu when clicking links
+                      navLinks.forEach((link) => {
+                        link.addEventListener("click", closeMenu)
+                      })
+
+                      // Close menu on ESC key
+                      document.addEventListener("keydown", (e) => {
+                        if (e.key === "Escape" && navOverlay.classList.contains("is-active")) {
+                          closeMenu()
+                        }
+                      })
+
+                      // Close menu if window is resized above mobile breakpoint
+                      window.addEventListener("resize", () => {
+                        if (window.innerWidth > 767 && navOverlay.classList.contains("is-active")) {
+                          closeMenu()
+                        }
+                      })
+                    })()
+                  });
+                </script>
+              </div>
+            </div>
+          </div>
+        </navigation-wrapper>
+        <section class="home-thq-welcome-hero-elm welcome-hero">
+          <div class="home-thq-welcome-hero-media-elm welcome-hero-media">
+            <img
+              alt="川原田治療院の明るく清潔な施術室"
+              src="public/bed2-1500h.jpg"
+              class="welcome-hero-img"
+            />
+            <div
+              class="home-thq-welcome-hero-overlay-elm welcome-hero-overlay"
+            ></div>
+          </div>
+          <div class="home-thq-welcome-hero-content-elm welcome-hero-content">
+            <div class="home-thq-welcome-hero-card-elm welcome-hero-card">
+              <h1 class="hero-title">川原田治療院</h1>
+              <p class="hero-subtitle">
+                <span>千葉県船橋市の川原田治療院です。</span>
+                <br />
+                <span>
+                  鍼灸と理学療法を組み合わせた独自の多角的アプローチで、あなたの健康を全力でサポートいたします。
+                </span>
+              </p>
+              <div class="welcome-hero-contact">
+                <div class="welcome-hero-phone-box">
+                  <div class="welcome-hero-phone-icon">
+                    <svg
+                      width="24"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233a14 14 0 0 0 6.392 6.384"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="welcome-hero-phone-text">
+                    <span class="welcome-hero-phone-label">
+                      お電話でのご予約・お問い合わせ
+                    </span>
+                    <a href="tel:000-0000-0000">
+                      <div class="welcome-hero-phone-number">
+                        <span>047-XXX-XXXX</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="services-snapshot">
+          <div class="services-container">
+            <div class="services-header">
+              <h2 class="section-title">提供サービス</h2>
+              <p class="section-subtitle">
+                専門的な知識と技術で、一人ひとりに最適な施術をご提案します。
+              </p>
+            </div>
+            <div class="services-grid">
+              <article class="services-card">
+                <div class="services-icon-wrapper">
+                  <svg
+                    width="32"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="32"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M3 21Q2 20 14.785 4.291a3.5 3.5 0 1 1 5.078 4.791Q4.001 22 3 21M17.5 6.5l-1 1"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                </div>
+                <h3 class="home-thq-section-content-elm10 section-content">
+                  鍼灸治療
+                </h3>
+                <p class="section-content">
+                  伝統的な東洋医学の知恵を活かし、ツボを刺激することで自己治癒力を高めます。慢性的な痛みや自律神経の乱れに効果的です。
+                </p>
+              </article>
+              <article class="services-card">
+                <div class="services-icon-wrapper">
+                  <svg width="32" height="32" viewBox="0 0 32 32">
+                    <path
+                      d="M28.166 2a13.03 13.03 0 0 0-12.542 9.58l-1.177 4.315A11.024 11.024 0 0 1 3.835 24H2v2h1.834a13 13 0 0 0 3.47-.482a3.998 3.998 0 1 0 6.581-4.286a13 13 0 0 0 1.62-2.527a3.994 3.994 0 1 0 2.378-7.6a11 11 0 0 1 1.725-3.01a3.983 3.983 0 0 0 6.906-3.964A11 11 0 0 1 28.166 4H30V2zM11 26a2 2 0 0 1-1.812-1.165a13 13 0 0 0 3.297-2.143A1.977 1.977 0 0 1 11 26m8-11a1.993 1.993 0 0 1-2.759 1.847c.044-.143.096-.282.136-.426l.924-3.391A2 2 0 0 1 19 15m6-9a1.994 1.994 0 0 1-3.901.59a11 11 0 0 1 3.362-1.94A2 2 0 0 1 25 6M10 4v4.586L3.414 2L2 3.414L8.586 10H4v2h8V4z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                </div>
+                <h3 class="home-thq-section-content-elm12 section-content">
+                  温熱療法
+                </h3>
+                <p class="section-content">
+                  <span>温熱療法を用いて治療しております。</span>
+                  <br />
+                  <span>
+                    血行促進、筋肉の緊張緩和、痛みの緩和が期待できます。
+                  </span>
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+        <section class="about-clinic">
+          <div class="about-container">
+            <div class="about-split">
+              <div class="about-text">
+                <h2 class="section-title">当院について</h2>
+                <p class="section-content">
+                  川原田治療院は、千葉県船橋市に位置する地域に根ざした治療院です。私たちは「対症療法」にとどまらず、痛みの根本原因にアプローチすることを哲学としています。
+                </p>
+                <p class="section-content">
+                  鍼灸の繊細なアプローチと、理学療法の科学的な視点を融合させることで、患者様一人ひとりのライフスタイルに合わせた最適なケアを提供いたします。静かで落ち着いた施術室で、心身ともにリラックスしていただける環境を整えております。
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="process-steps">
+          <div class="process-container">
+            <div class="process-header">
+              <h2 class="section-title">来院から施術までの流れ</h2>
+              <p class="section-subtitle">
+                初めての方でも安心して受診いただけるよう、丁寧なステップを心がけています。
+              </p>
+            </div>
+            <div class="process-track">
+              <div class="process-item">
+                <div class="process-number"><span>01</span></div>
+                <div class="process-info">
+                  <h3 class="home-thq-section-content-elm16 section-content">
+                    カウンセリング
+                  </h3>
+                  <p class="section-content">
+                    現在の症状やお悩み、生活習慣について詳しくお伺いします。
+                  </p>
+                </div>
+              </div>
+              <div class="process-connector"></div>
+              <div class="process-item">
+                <div class="process-number"><span>02</span></div>
+                <div class="process-info">
+                  <h3 class="home-thq-section-content-elm18 section-content">
+                    検査・評価
+                  </h3>
+                  <p class="section-content">
+                    身体の動きやバランスをチェックし、痛みの原因を特定します。
+                  </p>
+                </div>
+              </div>
+              <div class="process-connector"></div>
+              <div class="process-item">
+                <div class="process-number"><span>03</span></div>
+                <div class="process-info">
+                  <h3 class="home-thq-section-content-elm20 section-content">
+                    オーダーメイド施術
+                  </h3>
+                  <p class="section-content">
+                    鍼灸や理学療法を組み合わせ、最適な施術を行います。
+                  </p>
+                </div>
+              </div>
+              <div class="process-connector"></div>
+              <div class="process-item">
+                <div class="process-number"><span>04</span></div>
+                <div class="process-info">
+                  <h3 class="home-thq-section-content-elm22 section-content">
+                    アフターケア
+                  </h3>
+                  <p class="section-content">
+                    再発防止のためのストレッチや日常生活のアドバイスを行います。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="location-info">
+          <div class="location-container">
+            <div class="location-split">
+              <div class="location-details">
+                <h2 class="section-title">アクセス・診療時間</h2>
+                <div class="location-card">
+                  <div class="location-row">
+                    <div class="location-icon">
+                      <svg
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <g
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path
+                            d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+                          ></path>
+                          <circle r="3" cx="12" cy="10"></circle>
+                        </g>
+                      </svg>
+                    </div>
+                    <div class="location-text">
+                      <p class="home-thq-section-content-elm24 section-content">
+                        住所
+                      </p>
+                      <p class="section-content">
+                        〒273-XXXX 千葉県船橋市〇〇町 X-X-X
+                      </p>
+                      <p class="home-thq-section-content-elm26 section-content">
+                        最寄り駅：JR船橋駅より徒歩10分 / 京成船橋駅より徒歩8分
+                      </p>
+                    </div>
+                  </div>
+                  <div class="location-row">
+                    <div class="location-icon">
+                      <svg
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <g
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <circle r="10" cx="12" cy="12"></circle>
+                          <path d="M12 6v6l4 2"></path>
+                        </g>
+                      </svg>
+                    </div>
+                    <div class="location-text">
+                      <p class="home-thq-section-content-elm27 section-content">
+                        診療時間
+                      </p>
+                      <table class="location-table">
+                        <thead>
+                          <tr>
+                            <th><span>時間</span></th>
+                            <th><span>月</span></th>
+                            <th><span>火</span></th>
+                            <th><span>水</span></th>
+                            <th><span>木</span></th>
+                            <th><span>金</span></th>
+                            <th><span>土</span></th>
+                            <th><span>日</span></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span>09:00 - 12:00</span></td>
+                            <td><span>○</span></td>
+                            <td><span>○</span></td>
+                            <td><span>○</span></td>
+                            <td><span>休</span></td>
+                            <td><span>○</span></td>
+                            <td><span>○</span></td>
+                            <td><span>休</span></td>
+                          </tr>
+                          <tr>
+                            <td><span>15:00 - 19:00</span></td>
+                            <td><span>○</span></td>
+                            <td><span>○</span></td>
+                            <td><span>○</span></td>
+                            <td><span>休</span></td>
+                            <td><span>○</span></td>
+                            <td><span>△</span></td>
+                            <td><span>休</span></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <p class="home-thq-section-content-elm28 section-content">
+                        ※土曜午後は14:00〜17:00まで / 木曜・日曜・祝日は休診
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="home-container2"></div>
+              <div class="location-map">
+                <div class="map-placeholder home-thq-map-placeholder-elm">
+                  <iframe
+                    src="https://www.google.com/maps?q=〒273-0005 千葉県船橋市本町６丁目２−１０&amp;output=embed"
+                    address="〒273-0005 千葉県船橋市本町６丁目２−１０"
+                    class="home-google-maps"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="cta-block">
+          <div class="cta-container">
+            <div class="cta-card">
+              <div class="cta-content">
+                <h2 class="home-thq-section-title-elm5 section-title">
+                  お悩み、一人で抱え込まずにご相談ください
+                </h2>
+                <p class="home-thq-section-content-elm29 section-content">
+                  肩こり、腰痛、身体の不調など、どんな些細なことでも構いません。まずは一度、お話を聞かせてください。
+                </p>
+                <div class="cta-methods">
+                  <div class="cta-method-item">
+                    <span class="cta-method-label">お電話でのご予約</span>
+                    <a href="tel:047-XXX-XXXX">
+                      <div class="cta-phone-link">
+                        <span>047-XXX-XXXX</span>
+                      </div>
+                    </a>
+                    <span class="cta-method-note">
+                      受付時間：診療時間内（木・日・祝を除く）
+                    </span>
+                  </div>
+                  <div class="cta-divider"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="home-container3">
+          <div class="home-container4">
+            <style>
+                      @keyframes pulse {0% {transform: translate(-50%, -50%) scale(1);
+              opacity: 0.3;}
+              100% {transform: translate(-50%, -50%) scale(2.5);
+              opacity: 0;}}
+            </style>
+          </div>
+        </div>
+        <div class="home-container5">
+          <div class="home-container6">
+            <script defer="" data-name="clinic-interactions">
+              document.addEventListener('DOMContentLoaded', function() {
+                (function(){
+                  // Intersection Observer for subtle reveal effects
+                  const observerOptions = {
+                    threshold: 0.1,
+                    rootMargin: "0px 0px -50px 0px",
+                  }
+
+                  const revealObserver = new IntersectionObserver((entries) => {
+                    entries.forEach((entry) => {
+                      if (entry.isIntersecting) {
+                        entry.target.style.opacity = "1"
+                        entry.target.style.transform = "translateY(0)"
+                        revealObserver.unobserve(entry.target)
+                      }
+                    })
+                  }, observerOptions)
+
+                  // Initialize reveal styles
+                  document.querySelectorAll(".services-card, .process-item, .about-split").forEach((el) => {
+                    el.style.opacity = "0"
+                    el.style.transform = "translateY(20px)"
+                    el.style.transition = "opacity 0.6s ease-out, transform 0.6s ease-out"
+                    revealObserver.observe(el)
+                  })
+
+                  // Simple accessibility enhancement for the location table
+                  const tableCells = document.querySelectorAll(".location-table td")
+                  tableCells.forEach((cell) => {
+                    if (cell.textContent === "○") {
+                      cell.setAttribute("aria-label", "診察あり")
+                      cell.style.color = "var(--color-accent)"
+                      cell.style.fontWeight = "var(--font-weight-medium)"
+                    } else if (cell.textContent === "休") {
+                      cell.setAttribute("aria-label", "休診")
+                      cell.style.color = "var(--color-on-surface-secondary)"
+                      cell.style.opacity = "0.5"
+                    } else if (cell.textContent === "△") {
+                      cell.setAttribute("aria-label", "午後17時まで")
+                      cell.style.color = "var(--color-secondary)"
+                    }
+                  })
+                })()
+              });
+            </script>
+          </div>
+        </div>
+        <footer-wrapper class="footer-wrapper">
+          <!--Footer component-->
+          <div class="footer-container1">
+            <footer class="footer-root">
+              <div class="footer-container">
+                <div class="footer-grid">
+                  <div class="footer-column footer-brand-section">
+                    <div class="footer-logo-wrapper">
+                      <h2 class="section-title footer-brand-name">
+                        川原田治療院
+                      </h2>
+                      <p class="section-content footer-brand-tagline">
+                        千葉県船橋市の鍼灸・整体院
+                      </p>
+                    </div>
+                    <div class="footer-contact-list">
+                      <div class="footer-contact-item">
+                        <div class="footer-icon-box">
+                          <svg
+                            width="24"
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="24"
+                            viewBox="0 0 24 24"
+                          >
+                            <g
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <path
+                                d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+                              ></path>
+                              <circle r="3" cx="12" cy="10"></circle>
+                            </g>
+                          </svg>
+                        </div>
+                        <span class="section-content">
+                          〒273-0005 千葉県船橋市本町
+                        </span>
+                      </div>
+                      <div class="footer-contact-item">
+                        <div class="footer-icon-box">
+                          <svg
+                            width="24"
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="24"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233a14 14 0 0 0 6.392 6.384"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            ></path>
+                          </svg>
+                        </div>
+                        <a href="tel:047-000-0000">
+                          <div class="footer-tel footer-link section-content">
+                            <span>047-000-0000</span>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="footer-contact-item">
+                        <div class="footer-icon-box">
+                          <svg
+                            width="24"
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="24"
+                            viewBox="0 0 24 24"
+                          >
+                            <g
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <circle r="10" cx="12" cy="12"></circle>
+                              <path d="M12 6v6l4 2"></path>
+                            </g>
+                          </svg>
+                        </div>
+                        <span class="section-content">
+                          お電話受付時間: 9:00 - 19:00 (日曜定休)
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer-bottom">
+                  <div class="footer-legal">
+                    <a href="#">
+                      <div class="section-content footer-legal-link">
+                        <span>プライバシーポリシー</span>
+                      </div>
+                    </a>
+                  </div>
+                  <p class="section-content footer-copyright">
+                    &amp;copy; 2026 川原田治療院. All rights reserved.
+                  </p>
+                </div>
+              </div>
+            </footer>
+            <div class="footer-container2">
+              <div class="footer-container3">
+                <script defer="" data-name="footer-scroll-top">
+                  document.addEventListener('DOMContentLoaded', function() {
+                    (function(){
+                      const footerTelLink = document.querySelector(".footer-tel")
+                      if (footerTelLink) {
+                        footerTelLink.addEventListener("mouseenter", () => {
+                          footerTelLink.style.transition = "color 0.2s ease"
+                        })
+                      }
+
+                      const socialLinks = document.querySelectorAll(".footer-social-link")
+                      socialLinks.forEach((link) => {
+                        link.addEventListener("focus", () => {
+                          link.style.outline = "2px solid var(--color-secondary)"
+                          link.style.outlineOffset = "2px"
+                        })
+                        link.addEventListener("blur", () => {
+                          link.style.outline = "none"
+                        })
+                      })
+                    })()
+                  });
+                </script>
+              </div>
+            </div>
+            <nav class="footer-thq-navlinks-elm">
+              <a href="index.html">
+                <fragment class="home-fragment1">
+                  <span class="home-text46">Home</span>
+                </fragment>
+              </a>
+              <a href="interior-photos.html">
+                <fragment class="home-fragment2">
+                  <span class="home-text47">Page</span>
+                </fragment>
+              </a>
+              <a href="privacy-policy.html">privacy policy</a>
+            </nav>
+          </div>
+        </footer-wrapper>
+        <a href="https://play.teleporthq.io/signup">
+          <div aria-label="Sign up to TeleportHQ" class="home-container7">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 19 21"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="home-icon24"
+            >
+              <path
+                d="M9.1017 4.64355H2.17867C0.711684 4.64355 -0.477539 5.79975 -0.477539 7.22599V13.9567C-0.477539 15.3829 0.711684 16.5391 2.17867 16.5391H9.1017C10.5687 16.5391 11.7579 15.3829 11.7579 13.9567V7.22599C11.7579 5.79975 10.5687 4.64355 9.1017 4.64355Z"
+                fill="#B23ADE"
+              ></path>
+              <path
+                d="M10.9733 12.7878C14.4208 12.7878 17.2156 10.0706 17.2156 6.71886C17.2156 3.3671 14.4208 0.649963 10.9733 0.649963C7.52573 0.649963 4.73096 3.3671 4.73096 6.71886C4.73096 10.0706 7.52573 12.7878 10.9733 12.7878Z"
+                fill="#FF5C5C"
+              ></path>
+              <path
+                d="M17.7373 13.3654C19.1497 14.1588 19.1497 15.4634 17.7373 16.2493L10.0865 20.5387C8.67402 21.332 7.51855 20.6836 7.51855 19.0968V10.5141C7.51855 8.92916 8.67402 8.2807 10.0865 9.07221L17.7373 13.3654Z"
+                fill="#2874DE"
+              ></path>
+            </svg>
+            <span class="home-text48">Built in TeleportHQ</span>
+          </div>
+        </a>
+      </div>
+      <link
+        rel="canonical"
+        href="https://delectable-circular-zebra-jvendr.teleporthq.app/"
+      />
+    </div>
+  </body>
+</html>
